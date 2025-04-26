@@ -1,5 +1,14 @@
 <template>
   <section id="contact" class="contact-section bg-secondary">
+    <!-- Мета-теги для SEO -->
+    <meta
+      name="description"
+      content="Свяжитесь с тренером по боксу Игорем Плаксиным: телефон, адрес, график работы. Запишитесь на индивидуальную или групповую тренировку в Липецке."
+    />
+    <meta
+      name="keywords"
+      content="контакты тренера по боксу, телефон тренера бокса, адрес тренировок бокс Липецк, запись на тренировку, время работы, Игорь Плаксин"
+    />
     <div class="container">
       <h2 class="section-title light animate-on-scroll">Связаться со мной</h2>
       <p class="section-subtitle light animate-on-scroll">

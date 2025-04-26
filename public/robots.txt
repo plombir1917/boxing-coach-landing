@@ -1,2 +1,7 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.nuxt/
+Disallow: /.git/
+
+Sitemap: https://igor-plaksin.ru/sitemap.xml

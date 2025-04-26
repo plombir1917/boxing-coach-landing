@@ -7,12 +7,16 @@
       </p>
 
       <div class="services-grid">
-        <div class="service-card animate-on-scroll">
+        <div
+          class="service-card animate-on-scroll"
+          itemscope
+          itemtype="http://schema.org/Service"
+        >
           <div class="service-icon">
             <img src="/images/individual.svg" alt="Индивидуальные тренировки" />
           </div>
-          <h3>Индивидуальные тренировки</h3>
-          <p>
+          <h3 itemprop="name">Индивидуальные тренировки</h3>
+          <p itemprop="description">
             Персональные занятия один на один с тренером. Максимальное внимание
             к вашей технике, физической форме и индивидуальным особенностям.
           </p>
@@ -22,19 +26,34 @@
             <li>Интенсивный прогресс</li>
             <li>Постоянный контроль техники</li>
           </ul>
-          <div class="service-price">от 1300₽ / занятие</div>
+          <div
+            class="service-price"
+            itemprop="offers"
+            itemscope
+            itemtype="http://schema.org/Offer"
+          >
+            <span itemprop="price">от 1300₽</span>
+            <meta itemprop="priceCurrency" content="RUB" />
+            <span itemprop="availability" content="http://schema.org/InStock"
+              >/ занятие</span
+            >
+          </div>
           <NuxtLink to="#contact" class="btn btn-outline service-btn"
             >Записаться</NuxtLink
           >
         </div>
 
-        <div class="service-card animate-on-scroll">
+        <div
+          class="service-card animate-on-scroll"
+          itemscope
+          itemtype="http://schema.org/Service"
+        >
           <div class="service-icon primary">
             <img src="/images/group.svg" alt="Групповые тренировки" />
           </div>
-          <h3>Групповые тренировки</h3>
-          <p>
-            Тренировки в группе до 20 человек. Отличный вариант для тех, кто
+          <h3 itemprop="name">Групповые тренировки</h3>
+          <p itemprop="description">
+            Тренировки в группе до 8 человек. Отличный вариант для тех, кто
             предпочитает заниматься в компании единомышленников.
           </p>
           <ul class="service-features">
@@ -43,18 +62,33 @@
             <li>Спарринги с разными партнерами</li>
             <li>Мотивирующая атмосфера</li>
           </ul>
-          <div class="service-price">от 2300₽ / месяц</div>
+          <div
+            class="service-price"
+            itemprop="offers"
+            itemscope
+            itemtype="http://schema.org/Offer"
+          >
+            <span itemprop="price">от 2300₽</span>
+            <meta itemprop="priceCurrency" content="RUB" />
+            <span itemprop="availability" content="http://schema.org/InStock"
+              >/ месяц</span
+            >
+          </div>
           <NuxtLink to="#contact" class="btn btn-outline service-btn"
             >Записаться</NuxtLink
           >
         </div>
 
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon">
+        <div
+          class="service-card animate-on-scroll"
+          itemscope
+          itemtype="http://schema.org/Service"
+        >
+          <div class="service-icon secondary">
             <img src="/images/kids.svg" alt="Детские группы" />
           </div>
-          <h3>Детские группы</h3>
-          <p>
+          <h3 itemprop="name">Детские группы</h3>
+          <p itemprop="description">
             Специальные тренировки для детей от 7 лет. Обучение основам бокса в
             игровой форме с акцентом на общее физическое развитие.
           </p>
@@ -64,7 +98,18 @@
             <li>Укрепление здоровья</li>
             <li>Воспитание дисциплины</li>
           </ul>
-          <div class="service-price">от 2000₽ / месяц</div>
+          <div
+            class="service-price"
+            itemprop="offers"
+            itemscope
+            itemtype="http://schema.org/Offer"
+          >
+            <span itemprop="price">от 2000₽</span>
+            <meta itemprop="priceCurrency" content="RUB" />
+            <span itemprop="availability" content="http://schema.org/InStock"
+              >/ месяц</span
+            >
+          </div>
           <NuxtLink to="#contact" class="btn btn-outline service-btn"
             >Записаться</NuxtLink
           >
@@ -104,7 +149,7 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -127,8 +172,8 @@
 }
 
 .service-icon {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: rgba(230, 57, 70, 0.1);
   display: flex;
@@ -146,8 +191,9 @@
 }
 
 .service-icon img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .service-card h3 {
@@ -227,6 +273,12 @@
 
 .cta-block .btn:hover {
   background-color: #d12836;
+}
+
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {

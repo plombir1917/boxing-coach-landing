@@ -13,6 +13,70 @@
 
 <script setup>
 // Компоненты подключаются автоматически благодаря Nuxt
+import { onMounted, useHead } from '#imports';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SportsActivityLocation',
+  name: 'Игорь Плаксин - Тренер по боксу',
+  description:
+    'Индивидуальные и групповые тренировки по боксу в Липецке для начинающих и профессионалов.',
+  url: 'https://igor-plaksin.ru',
+  telephone: '+79042811490',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'ул. Звёздная, д. 6',
+    addressLocality: 'Липецк',
+    postalCode: '398902',
+    addressCountry: 'RU',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 52.603377,
+    longitude: 39.598916,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '07:00',
+      closes: '22:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Saturday', 'Sunday'],
+      opens: '08:00',
+      closes: '15:00',
+    },
+  ],
+  image: 'https://igor-plaksin.ru/images/trainer.jpg',
+  sameAs: [
+    'https://vk.com/igor_plaksin',
+    'https://www.instagram.com/igor_boxingcoach',
+    'https://t.me/igor_boxingcoach',
+  ],
+  priceRange: 'от 1300₽',
+  offers: {
+    '@type': 'Offer',
+    description: 'Индивидуальные тренировки по боксу',
+    price: '1300',
+    priceCurrency: 'RUB',
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://igor-plaksin.ru',
+  },
+};
+
+// Добавляем структурированные данные в head через Nuxt API
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(jsonLd),
+    },
+  ],
+});
 </script>
 
 <style>
