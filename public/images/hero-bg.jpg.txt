@@ -1,0 +1,4 @@
+This is a placeholder for the hero background image. 
+In a real project, this would be a JPG image.
+For the boxing coach landing page, this should be a high-quality image of a boxing gym, 
+a boxer in training, or a coach working with a student. 
