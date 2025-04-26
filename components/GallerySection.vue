@@ -126,14 +126,13 @@ const images = [
   {
     src: '/images/gallery/training2.jpg',
     alt: 'Групповая тренировка',
-    caption: 'Групповое занятие по физической подготовке',
+    caption: 'Групповое занятие в старшей группе',
     category: 'training',
   },
   {
     src: '/images/gallery/competition1.jpg',
     alt: 'Соревнование по боксу',
-
-    caption: 'Чемпионат города, финальный бой',
+    caption: 'Победа в соревнованиях',
     category: 'competition',
   },
   {
@@ -144,14 +143,14 @@ const images = [
   },
   {
     src: '/images/gallery/training3.jpg',
-    alt: 'Отработка ударов',
-    caption: 'Тренировка на боксерских мешках',
+    alt: 'Сборы',
+    caption: 'Сборы в Тайланде',
     category: 'training',
   },
   {
     src: '/images/gallery/competition2.jpg',
-    alt: 'Победа на соревновании',
-    caption: 'Награждение победителей регионального турнира',
+    alt: 'Соревнования',
+    caption: 'Всероссийский турнир',
     category: 'competition',
   },
   {
@@ -165,6 +164,12 @@ const images = [
     alt: 'Спарринг',
     caption: 'Тренировочный спарринг для подготовки к соревнованиям',
     category: 'training',
+  },
+  {
+    src: '/images/gallery/competition3.jpg',
+    alt: 'Соревнования',
+    caption: 'Чемпионат города, финальный бой',
+    category: 'competition',
   },
 ];
 
