@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <NuxtLink to="/">
+          <NuxtLink to="#">
             <span class="logo-text">Игорь Плаксин</span>
             <span class="logo-subtext">Тренер по боксу</span>
           </NuxtLink>
