@@ -49,7 +49,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <span>г. Москва, ул. Спортивная, д. 10</span>
+              <span>г. Липецк, ул. Звёздная, д. 6</span>
             </li>
             <li>
               <svg
@@ -95,33 +95,6 @@
               <a href="mailto:info@igor-plaksin.ru">info@igor-plaksin.ru</a>
             </li>
           </ul>
-        </div>
-
-        <div class="footer-newsletter">
-          <h3>Подпишитесь на новости</h3>
-          <p>
-            Получайте информацию о специальных предложениях и новых тренировках
-          </p>
-          <form @submit.prevent="subscribeNewsletter">
-            <div class="form-group">
-              <input
-                type="email"
-                placeholder="Ваш email"
-                v-model="newsletterEmail"
-                required
-              />
-              <button
-                type="submit"
-                class="btn btn-primary"
-                :disabled="isSubmitting"
-              >
-                {{ isSubmitting ? 'Подписка...' : 'Подписаться' }}
-              </button>
-            </div>
-          </form>
-          <div v-if="subscribeSuccess" class="subscribe-success">
-            Спасибо за подписку!
-          </div>
         </div>
       </div>
 

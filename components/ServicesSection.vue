@@ -22,7 +22,7 @@
             <li>Интенсивный прогресс</li>
             <li>Постоянный контроль техники</li>
           </ul>
-          <div class="service-price">от 2000₽ / занятие</div>
+          <div class="service-price">от 1300₽ / занятие</div>
           <NuxtLink to="#contact" class="btn btn-outline service-btn"
             >Записаться</NuxtLink
           >
@@ -34,7 +34,7 @@
           </div>
           <h3>Групповые тренировки</h3>
           <p>
-            Тренировки в группе до 8 человек. Отличный вариант для тех, кто
+            Тренировки в группе до 20 человек. Отличный вариант для тех, кто
             предпочитает заниматься в компании единомышленников.
           </p>
           <ul class="service-features">
@@ -43,31 +43,7 @@
             <li>Спарринги с разными партнерами</li>
             <li>Мотивирующая атмосфера</li>
           </ul>
-          <div class="service-price">от 1200₽ / занятие</div>
-          <NuxtLink to="#contact" class="btn btn-outline service-btn"
-            >Записаться</NuxtLink
-          >
-        </div>
-
-        <div class="service-card animate-on-scroll">
-          <div class="service-icon secondary">
-            <img
-              src="/images/competition.svg"
-              alt="Подготовка к соревнованиям"
-            />
-          </div>
-          <h3>Подготовка к соревнованиям</h3>
-          <p>
-            Специализированная программа для боксеров, планирующих выступать на
-            соревнованиях. Интенсивные тренировки для достижения пика формы.
-          </p>
-          <ul class="service-features">
-            <li>Комплексная подготовка</li>
-            <li>Спарринги высокой интенсивности</li>
-            <li>Тактическая подготовка</li>
-            <li>Психологическая поддержка</li>
-          </ul>
-          <div class="service-price">от 3000₽ / занятие</div>
+          <div class="service-price">от 2300₽ / месяц</div>
           <NuxtLink to="#contact" class="btn btn-outline service-btn"
             >Записаться</NuxtLink
           >
@@ -88,7 +64,7 @@
             <li>Укрепление здоровья</li>
             <li>Воспитание дисциплины</li>
           </ul>
-          <div class="service-price">от 1000₽ / занятие</div>
+          <div class="service-price">от 2000₽ / месяц</div>
           <NuxtLink to="#contact" class="btn btn-outline service-btn"
             >Записаться</NuxtLink
           >

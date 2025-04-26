@@ -1,4 +1,0 @@
-This is a placeholder for the trainer's photograph.
-In a real project, this would be a JPG image.
-For the boxing coach landing page, this should be a professional photo of the boxing trainer Igor Plaksin, 
-preferably in a boxing gym environment or in training gear. 

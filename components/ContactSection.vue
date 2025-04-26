@@ -95,10 +95,7 @@
                 </div>
                 <div class="contact-text">
                   <strong>Адрес:</strong>
-                  <span
-                    >г. Москва, ул. Спортивная, д. 10, Боксерский клуб
-                    "Чемпион"</span
-                  >
+                  <span>г. Липецк, ул. Звёздная, д. 6, Зал бокса</span>
                 </div>
               </div>
             </div>
@@ -153,84 +150,24 @@
             <h3>Время работы</h3>
             <ul>
               <li><span>Понедельник - Пятница:</span> 7:00 - 22:00</li>
-              <li><span>Суббота:</span> 9:00 - 20:00</li>
-              <li><span>Воскресенье:</span> 10:00 - 18:00</li>
+              <li><span>Суббота:</span> 8:00 - 15:00</li>
+              <li><span>Воскресенье:</span> 8:00 - 15:00</li>
             </ul>
           </div>
-        </div>
-
-        <div class="contact-form-container animate-on-scroll">
-          <form class="contact-form" @submit.prevent="submitForm">
-            <h3>Оставить заявку</h3>
-
-            <div class="form-group">
-              <label for="name">Ваше имя</label>
-              <input type="text" id="name" v-model="form.name" required />
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Телефон</label>
-              <input type="tel" id="phone" v-model="form.phone" required />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" v-model="form.email" />
-            </div>
-
-            <div class="form-group">
-              <label for="service">Интересующая услуга</label>
-              <select id="service" v-model="form.service">
-                <option value="">Выберите услугу</option>
-                <option value="individual">Индивидуальные тренировки</option>
-                <option value="group">Групповые тренировки</option>
-                <option value="competition">Подготовка к соревнованиям</option>
-                <option value="kids">Детские группы</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Сообщение</label>
-              <textarea id="message" rows="4" v-model="form.message"></textarea>
-            </div>
-
-            <div class="form-group checkbox">
-              <input
-                type="checkbox"
-                id="agreement"
-                v-model="form.agreement"
-                required
-              />
-              <label for="agreement"
-                >Я согласен на обработку моих персональных данных</label
-              >
-            </div>
-
-            <button
-              type="submit"
-              class="btn btn-primary"
-              :disabled="isSubmitting"
-            >
-              {{ isSubmitting ? 'Отправка...' : 'Отправить заявку' }}
-            </button>
-
-            <div v-if="formSubmitted" class="form-success">
-              Спасибо! Ваша заявка успешно отправлена.
-            </div>
-          </form>
         </div>
       </div>
     </div>
 
     <div class="map-container animate-on-scroll">
-      <!-- Здесь можно подключить Google Maps или Яндекс.Карты -->
+      <!-- Google Maps -->
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.3962879687654!2d37.608687!3d55.754097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzE0LjgiTiAzN8KwMzYnMzEuMyJF!5e0!3m2!1sru!2sru!4v1637579777777!5m2!1sru!2sru"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.101827172558!2d39.59472817696897!3d52.60329997721519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413a14f62de67a85%3A0x9fc2e787c9a71e85!2z0JfQstGR0LfQtNC90LDRjyDRg9C7LiwgNiwg0JvQuNC_0LXRhtC6LCDQm9C40L_QtdGG0LrQsNGPINC-0LHQuy4sIDM5ODkwMA!5e0!3m2!1sru!2sru!4v1658134534321!5m2!1sru!2sru"
         width="100%"
         height="400"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
   </section>
@@ -308,11 +245,15 @@ const submitForm = () => {
   margin-bottom: 60px;
 }
 
+.contact-info {
+  display: contents;
+}
+
 .contact-card {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .contact-card h3,
@@ -504,14 +445,14 @@ const submitForm = () => {
 @media (max-width: 992px) {
   .contact-content {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .contact-info {
-    order: 2;
+    display: block;
   }
 
-  .contact-form-container {
-    order: 1;
+  .contact-card {
     margin-bottom: 30px;
   }
 }
@@ -522,8 +463,7 @@ const submitForm = () => {
   }
 
   .contact-card,
-  .contact-hours,
-  .contact-form {
+  .contact-hours {
     padding: 20px;
   }
 }

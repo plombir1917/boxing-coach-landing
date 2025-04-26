@@ -6,7 +6,7 @@
       <div class="about-content">
         <div class="about-image-container animate-on-scroll">
           <img
-            src=""
+            src="/images/trainer.jpg"
             alt="Игорь Плаксин - тренер по боксу"
             class="about-image"
           />
