@@ -5,7 +5,7 @@
       <div class="hero-content">
         <h1 class="fade-in">
           <span class="heading-primary">ИГОРЬ ПЛАКСИН</span>
-          <span class="heading-sub">ПРОФЕССИОНАЛЬНЫЙ ТРЕНЕР ПО БОКСУ</span>
+          <span class="heading-sub">ТРЕНЕР ПО БОКСУ</span>
         </h1>
         <p class="hero-description fade-in">
           Тренировки для начинающих и профессионалов. Индивидуальный подход к

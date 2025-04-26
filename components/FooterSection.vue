@@ -67,7 +67,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+              <a href="tel:+79042811490">+7 (904) 281-14-90</a>
             </li>
             <li>
               <svg
@@ -103,7 +103,12 @@
           &copy; {{ currentYear }} Игорь Плаксин. Все права защищены.
         </div>
         <div class="social-links">
-          <a href="#" class="social-link" title="ВКонтакте">
+          <a
+            href="https://vk.com/igor_plaksin"
+            target="_blank"
+            class="social-link"
+            title="ВКонтакте"
+          >
             <svg
               width="20"
               height="20"
@@ -117,7 +122,12 @@
               />
             </svg>
           </a>
-          <a href="#" class="social-link" title="Instagram">
+          <a
+            href="https://www.instagram.com/igor_boxingcoach"
+            target="_blank"
+            class="social-link"
+            title="Instagram"
+          >
             <svg
               width="20"
               height="20"
@@ -131,7 +141,12 @@
               />
             </svg>
           </a>
-          <a href="#" class="social-link" title="Telegram">
+          <a
+            href="https://t.me/igor_boxingcoach"
+            target="_blank"
+            class="social-link"
+            title="Telegram"
+          >
             <svg
               width="20"
               height="20"
