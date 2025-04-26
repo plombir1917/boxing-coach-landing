@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Игорь Плаксин - Тренер по боксу в Липецке",
+  "short_name": "Игорь Плаксин",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
