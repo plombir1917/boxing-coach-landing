@@ -76,6 +76,13 @@ useHead({
       innerHTML: JSON.stringify(jsonLd),
     },
   ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico',
+    },
+  ],
 });
 </script>
 
