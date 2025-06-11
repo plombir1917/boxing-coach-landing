@@ -12,15 +12,20 @@
           каждому ученику.
         </p>
         <div class="hero-cta fade-in">
-          <NuxtLink to="#contact" class="btn btn-primary btn-pulse"
+          <NuxtLink
+            to="#contact"
+            class="btn btn-primary btn-pulse"
+            @click="smoothScroll"
             >Записаться на тренировку</NuxtLink
           >
-          <NuxtLink to="#about" class="btn btn-outline">Узнать больше</NuxtLink>
+          <NuxtLink to="#about" class="btn btn-outline" @click="smoothScroll"
+            >Узнать больше</NuxtLink
+          >
         </div>
       </div>
     </div>
     <div class="scroll-down">
-      <NuxtLink to="#about">
+      <NuxtLink to="#about" @click="smoothScroll">
         <svg
           width="24"
           height="24"
@@ -42,7 +47,18 @@
 </template>
 
 <script setup>
-// Нет дополнительной логики
+const smoothScroll = (e) => {
+  e.preventDefault();
+  const targetId = e.currentTarget.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
 </script>
 
 <style scoped>

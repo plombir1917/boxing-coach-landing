@@ -11,12 +11,25 @@
 
         <nav class="nav-desktop hide-mobile">
           <ul class="nav-list">
-            <li><NuxtLink to="#about">Обо мне</NuxtLink></li>
-            <li><NuxtLink to="#services">Услуги</NuxtLink></li>
-            <li><NuxtLink to="#gallery">Галерея</NuxtLink></li>
-            <li><NuxtLink to="#testimonials">Отзывы</NuxtLink></li>
             <li>
-              <NuxtLink to="#contact" class="btn btn-primary"
+              <NuxtLink to="#about" @click="smoothScroll">Обо мне</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="#services" @click="smoothScroll">Услуги</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="#gallery" @click="smoothScroll">Галерея</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="#testimonials" @click="smoothScroll"
+                >Отзывы</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="#contact"
+                class="btn btn-primary"
+                @click="smoothScroll"
                 >Записаться</NuxtLink
               >
             </li>
@@ -34,18 +47,69 @@
     </div>
 
     <div class="mobile-menu" :class="{ 'mobile-menu-open': mobileMenuOpen }">
+      <button class="mobile-menu-close" @click="closeMobileMenu">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18M6 6L18 18"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
       <ul class="mobile-nav-list">
         <li>
-          <NuxtLink to="#about" @click="closeMobileMenu">Обо мне</NuxtLink>
+          <NuxtLink
+            to="#about"
+            @click="
+              (e) => {
+                smoothScroll(e);
+                closeMobileMenu();
+              }
+            "
+            >Обо мне</NuxtLink
+          >
         </li>
         <li>
-          <NuxtLink to="#services" @click="closeMobileMenu">Услуги</NuxtLink>
+          <NuxtLink
+            to="#services"
+            @click="
+              (e) => {
+                smoothScroll(e);
+                closeMobileMenu();
+              }
+            "
+            >Услуги</NuxtLink
+          >
         </li>
         <li>
-          <NuxtLink to="#gallery" @click="closeMobileMenu">Галерея</NuxtLink>
+          <NuxtLink
+            to="#gallery"
+            @click="
+              (e) => {
+                smoothScroll(e);
+                closeMobileMenu();
+              }
+            "
+            >Галерея</NuxtLink
+          >
         </li>
         <li>
-          <NuxtLink to="#testimonials" @click="closeMobileMenu"
+          <NuxtLink
+            to="#testimonials"
+            @click="
+              (e) => {
+                smoothScroll(e);
+                closeMobileMenu();
+              }
+            "
             >Отзывы</NuxtLink
           >
         </li>
@@ -53,7 +117,12 @@
           <NuxtLink
             to="#contact"
             class="btn btn-primary"
-            @click="closeMobileMenu"
+            @click="
+              (e) => {
+                smoothScroll(e);
+                closeMobileMenu();
+              }
+            "
             >Записаться</NuxtLink
           >
         </li>
@@ -70,6 +139,19 @@ const mobileMenuOpen = ref(false);
 
 const handleScroll = () => {
   scrolled.value = window.scrollY > 50;
+};
+
+const smoothScroll = (e) => {
+  e.preventDefault();
+  const targetId = e.currentTarget.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
 };
 
 const toggleMobileMenu = () => {
@@ -210,6 +292,22 @@ onUnmounted(() => {
 
 .mobile-menu-open {
   transform: translateX(0);
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+  transform: rotate(90deg);
 }
 
 .mobile-nav-list {

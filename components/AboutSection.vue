@@ -58,7 +58,10 @@
           </div>
 
           <div class="about-cta">
-            <NuxtLink to="#contact" class="btn btn-primary"
+            <NuxtLink
+              to="#contact"
+              class="btn btn-primary"
+              @click="smoothScroll"
               >Записаться на тренировку</NuxtLink
             >
           </div>
@@ -70,6 +73,19 @@
 
 <script setup>
 import { onMounted, onUnmounted } from 'vue';
+
+const smoothScroll = (e) => {
+  e.preventDefault();
+  const targetId = e.currentTarget.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
 
 // Функция для анимации элементов при прокрутке
 const handleScroll = () => {

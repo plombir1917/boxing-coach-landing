@@ -21,7 +21,7 @@ const jsonLd = {
   name: 'Игорь Плаксин - Тренер по боксу',
   description:
     'Индивидуальные и групповые тренировки по боксу в Липецке для начинающих и профессионалов.',
-  url: 'https://igor-plaksin.ru',
+  url: 'https://igor-plaxin.ru',
   telephone: '+79042811490',
   address: {
     '@type': 'PostalAddress',
@@ -51,7 +51,7 @@ const jsonLd = {
   ],
   image: 'https://igor-plaksin.ru/images/trainer.jpg',
   sameAs: [
-    'https://vk.com/igor_plaksin',
+    'https://vk.com/igor_plaxin',
     'https://www.instagram.com/igor_boxingcoach',
     'https://t.me/igor_boxingcoach',
   ],

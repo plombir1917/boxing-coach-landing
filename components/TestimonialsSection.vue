@@ -98,7 +98,7 @@
 
       <div class="testimonial-cta animate-on-scroll">
         <p>Присоединяйтесь к моим довольным ученикам уже сегодня!</p>
-        <NuxtLink to="#contact" class="btn btn-primary"
+        <NuxtLink to="#contact" class="btn btn-primary" @click="smoothScroll"
           >Записаться на тренировку</NuxtLink
         >
       </div>
@@ -108,6 +108,19 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+const smoothScroll = (e) => {
+  e.preventDefault();
+  const targetId = e.currentTarget.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
 
 // Данные отзывов
 const testimonials = [

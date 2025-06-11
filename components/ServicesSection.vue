@@ -38,7 +38,10 @@
               >/ занятие</span
             >
           </div>
-          <NuxtLink to="#contact" class="btn btn-outline service-btn"
+          <NuxtLink
+            to="#contact"
+            class="btn btn-outline service-btn"
+            @click="smoothScroll"
             >Записаться</NuxtLink
           >
         </div>
@@ -74,7 +77,10 @@
               >/ месяц</span
             >
           </div>
-          <NuxtLink to="#contact" class="btn btn-outline service-btn"
+          <NuxtLink
+            to="#contact"
+            class="btn btn-outline service-btn"
+            @click="smoothScroll"
             >Записаться</NuxtLink
           >
         </div>
@@ -104,13 +110,16 @@
             itemscope
             itemtype="http://schema.org/Offer"
           >
-            <span itemprop="price">от 2000₽</span>
+            <span itemprop="price">от 1000₽</span>
             <meta itemprop="priceCurrency" content="RUB" />
             <span itemprop="availability" content="http://schema.org/InStock"
               >/ месяц</span
             >
           </div>
-          <NuxtLink to="#contact" class="btn btn-outline service-btn"
+          <NuxtLink
+            to="#contact"
+            class="btn btn-outline service-btn"
+            @click="smoothScroll"
             >Записаться</NuxtLink
           >
         </div>
@@ -122,7 +131,7 @@
           Свяжитесь со мной, и я помогу подобрать оптимальный вариант тренировок
           именно для вас.
         </p>
-        <NuxtLink to="#contact" class="btn btn-primary"
+        <NuxtLink to="#contact" class="btn btn-primary" @click="smoothScroll"
           >Получить консультацию</NuxtLink
         >
       </div>
@@ -132,6 +141,18 @@
 
 <script setup>
 // Используется общая функция для анимации прокрутки из компонента AboutSection
+const smoothScroll = (e) => {
+  e.preventDefault();
+  const targetId = e.currentTarget.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
 </script>
 
 <style scoped>

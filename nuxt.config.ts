@@ -30,7 +30,7 @@ export default defineNuxtConfig({
             'Тренировки по боксу для всех уровней подготовки. Индивидуальные и групповые занятия с тренером в Липецке.',
         },
         { property: 'og:image', content: '/images/og-image.jpg' },
-        { property: 'og:url', content: 'https://igor-plaksin.ru' },
+        { property: 'og:url', content: 'https://igor-plaxin.ru' },
         {
           property: 'og:site_name',
           content: 'Игорь Плаксин - Тренер по боксу',
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
           href: '/images/apple-touch-icon.png',
         },
         { rel: 'manifest', href: '/site.webmanifest' },
-        { rel: 'canonical', href: 'https://igor-plaksin.ru' },
+        { rel: 'canonical', href: 'https://igor-plaxin.ru' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
           rel: 'preconnect',
