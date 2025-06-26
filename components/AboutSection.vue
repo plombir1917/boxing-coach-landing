@@ -11,21 +11,21 @@
             class="about-image"
           />
           <div class="experience-badge">
-            <span class="experience-years">10+</span>
+            <span class="experience-years">5+</span>
             <span class="experience-text">лет опыта</span>
           </div>
         </div>
 
         <div class="about-text animate-on-scroll">
           <h3>Игорь Плаксин</h3>
-          <p class="about-subtitle">Тренер по боксу, мастер спорта</p>
+          <p class="about-subtitle">Тренер по боксу</p>
 
           <div class="about-description">
             <p>
               Приветствую вас на моём сайте! Я — Игорь Плаксин, тренер по боксу
               с более чем 10-летним опытом работы. Моя спортивная карьера
-              началась ещё в юности и привела меня к званию мастера спорта и
-              множеству побед на соревнованиях различного уровня.
+              началась ещё в юности и привела меня к множеству побед на
+              соревнованиях различного уровня.
             </p>
             <p>
               Сегодня я посвящаю свою жизнь тренерской работе, помогая как
@@ -48,11 +48,7 @@
               <div class="stat-label">Учеников</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number">15</div>
-              <div class="stat-label">Чемпионов</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">10+</div>
+              <div class="stat-number">5+</div>
               <div class="stat-label">Лет опыта</div>
             </div>
           </div>
