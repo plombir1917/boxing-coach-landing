@@ -32,11 +32,7 @@
             itemscope
             itemtype="http://schema.org/Offer"
           >
-            <span itemprop="price">от 1300₽</span>
             <meta itemprop="priceCurrency" content="RUB" />
-            <span itemprop="availability" content="http://schema.org/InStock"
-              >/ занятие</span
-            >
           </div>
           <NuxtLink
             to="#contact"
@@ -71,11 +67,7 @@
             itemscope
             itemtype="http://schema.org/Offer"
           >
-            <span itemprop="price">от 2300₽</span>
             <meta itemprop="priceCurrency" content="RUB" />
-            <span itemprop="availability" content="http://schema.org/InStock"
-              >/ месяц</span
-            >
           </div>
           <NuxtLink
             to="#contact"
@@ -109,13 +101,7 @@
             itemprop="offers"
             itemscope
             itemtype="http://schema.org/Offer"
-          >
-            <span itemprop="price">от 1000₽</span>
-            <meta itemprop="priceCurrency" content="RUB" />
-            <span itemprop="availability" content="http://schema.org/InStock"
-              >/ месяц</span
-            >
-          </div>
+          ></div>
           <NuxtLink
             to="#contact"
             class="btn btn-outline service-btn"
