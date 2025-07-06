@@ -24,7 +24,7 @@ const jsonLd = {
   telephone: '+79042811490',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'ул. Звёздная, д. 6',
+    streetAddress: 'ул. Звёздная, Зал бокса',
     addressLocality: 'Липецк',
     postalCode: '398902',
     addressCountry: 'RU',

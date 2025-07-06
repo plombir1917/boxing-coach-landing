@@ -49,7 +49,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <span>г. Липецк, ул. Звёздная, д. 6</span>
+              <span>г. Липецк, ул. Звёздная, Зал бокса</span>
             </li>
             <li>
               <svg

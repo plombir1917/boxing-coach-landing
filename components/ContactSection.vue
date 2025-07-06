@@ -104,7 +104,7 @@
                 </div>
                 <div class="contact-text">
                   <strong>Адрес:</strong>
-                  <span>г. Липецк, ул. Звёздная, д. 6, Зал бокса</span>
+                  <span>г. Липецк, ул. Звёздная, Зал бокса</span>
                 </div>
               </div>
             </div>
