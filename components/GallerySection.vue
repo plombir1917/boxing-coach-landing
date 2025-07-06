@@ -160,6 +160,12 @@ const images = [
     category: 'kids',
   },
   {
+    src: '/images/gallery/kids3.jpg',
+    alt: 'Детские соревнования',
+    caption: 'Соревнования детской группы',
+    category: 'kids',
+  },
+  {
     src: '/images/gallery/training4.jpg',
     alt: 'Спарринг',
     caption: 'Тренировочный спарринг для подготовки к соревнованиям',
@@ -169,6 +175,12 @@ const images = [
     src: '/images/gallery/competition3.jpg',
     alt: 'Соревнования',
     caption: 'Чемпионат города, финальный бой',
+    category: 'competition',
+  },
+  {
+    src: '/images/gallery/competition4.jpg',
+    alt: 'Профессиональные соревнования',
+    caption: 'Соревнования по профессионалам',
     category: 'competition',
   },
 ];
