@@ -12,6 +12,9 @@
         <nav class="nav-desktop hide-mobile">
           <ul class="nav-list">
             <li>
+              <NuxtLink to="#main" @click="smoothScroll">Главная</NuxtLink>
+            </li>
+            <li>
               <NuxtLink to="#about" @click="smoothScroll">Обо мне</NuxtLink>
             </li>
             <li>
@@ -20,11 +23,7 @@
             <li>
               <NuxtLink to="#gallery" @click="smoothScroll">Галерея</NuxtLink>
             </li>
-            <li>
-              <NuxtLink to="#testimonials" @click="smoothScroll"
-                >Отзывы</NuxtLink
-              >
-            </li>
+
             <li>
               <NuxtLink
                 to="#contact"
@@ -67,6 +66,18 @@
       <ul class="mobile-nav-list">
         <li>
           <NuxtLink
+            to="#main"
+            @click="
+              (e) => {
+                smoothScroll(e);
+                closeMobileMenu();
+              }
+            "
+            >Главная</NuxtLink
+          >
+        </li>
+        <li>
+          <NuxtLink
             to="#about"
             @click="
               (e) => {
@@ -101,18 +112,7 @@
             >Галерея</NuxtLink
           >
         </li>
-        <li>
-          <NuxtLink
-            to="#testimonials"
-            @click="
-              (e) => {
-                smoothScroll(e);
-                closeMobileMenu();
-              }
-            "
-            >Отзывы</NuxtLink
-          >
-        </li>
+
         <li>
           <NuxtLink
             to="#contact"

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section id="main" class="hero-section">
     <div class="overlay"></div>
     <div class="container">
       <div class="hero-content">
