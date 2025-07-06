@@ -5,7 +5,6 @@
     <about-section />
     <services-section />
     <gallery-section />
-    <testimonials-section />
     <contact-section />
     <footer-section />
   </div>
