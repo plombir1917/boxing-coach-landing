@@ -104,7 +104,7 @@
         </div>
         <div class="social-links">
           <a
-            href="https://vk.com/igor_plaksin"
+            href="https://vk.com/igor_plaxin"
             target="_blank"
             class="social-link"
             title="ВКонтакте"
